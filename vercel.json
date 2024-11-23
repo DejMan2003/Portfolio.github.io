@@ -7,12 +7,12 @@
   ],
   "routes": [
     {
-      "source": "/feedback/:id",
-      "destination": "/api/feedback/:id"
-    },
-    {
       "src": "/aboutus",
       "dest": "/aboutus.html"
+    },
+    {
+      "src": "/landing",
+      "dest": "/landing.html"
     },
     {
       "src": "/(.*)",
