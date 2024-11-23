@@ -1,8 +1,14 @@
 {
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
-      "src": "/feedback/:id", 
-      "dest": "/api/feedback/:id"
+      "src": "/feedback/(.*)",
+      "dest": "/api/feedback/$1"
     },
     {
       "src": "/aboutus",
