@@ -7,8 +7,8 @@
   ],
   "routes": [
     {
-      "source": "/feedback/:id",
-      "destination": "/api/feedback/:id"
+      "src": "/feedback/:id", 
+      "dest": "/api/feedback/:id"
     },
     {
       "src": "/aboutus",
