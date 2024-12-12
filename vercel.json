@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "index.html",
-      "use": "@vercel/static"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -17,6 +17,10 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "./assets/css/main.css"
     }
   ]
 }
