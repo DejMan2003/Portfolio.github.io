@@ -20,7 +20,7 @@
     },
     {
       "source": "/styles.css",
-      "destination": "./assets/css/main.css"
+      "destination": "/assets/css/main.css"
     }
   ],
   "functions": {
