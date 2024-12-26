@@ -5,22 +5,30 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/aboutus",
-      "dest": "/aboutus.html"
+      "source": "/aboutus",
+      "destination": "/aboutus.html"
     },
     {
-      "src": "/landing",
-      "dest": "/landing.html"
+      "source": "/landing",
+      "destination": "/landing.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     },
     {
-      "src": "/styles.css",
-      "dest": "./assets/css/main.css"
+      "source": "/styles.css",
+      "destination": "./assets/css/main.css"
     }
-  ]
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "regions": ["sfo1"],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
