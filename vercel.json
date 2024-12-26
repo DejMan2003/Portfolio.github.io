@@ -24,11 +24,15 @@
     }
   ],
   "functions": {
-    "api/**/*.js": {
-      "maxDuration": 30
+    "pages/api/**/*.js": {
+      "maxDuration": 30,
+      "memory": 128
     }
   },
-  "regions": ["sfo1"],
+  "regions": ["sfo1"], 
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "env": {
+    "EXAMPLE_ENV_VAR": "value"
+  }
 }
